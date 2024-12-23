@@ -1,1 +1,48 @@
-aa
+########## in Windows  ###############
+## installing rclone
+   1- from app
+
+C:\rclone
+
+rclone config
+
+
+
+
+   2- from web-gui
+
+
+
+
+## installing web-gui
+
+
+
+.\rclone rcd --rc-web-gui --rc-user=admin --rc-pass=yourpassword --rc-addr=0.0.0.0:5572    # to connect from remote wıth u+p
+
+http://127.0.0.1:5572
+
+http://<your-ip>:5572
+
+## 4. Rclone Web GUI’yi Otomatik Başlatma
+
+
+* Adım 1: Görev Zamanlayıcıyı Açın
+    Başlat Menüsü > Görev Zamanlayıcı yazın ve açın.
+    Sağ tarafta Görev Oluştur seçeneğini seçin.
+* Adım 2: Yeni Görev Tanımlayın
+          Genel Sekmesi:
+          Görev adı olarak Rclone Web GUI girin.
+          "En yüksek ayrıcalıklarla çalıştır" seçeneğini işaretleyin.
+          Tetikleyiciler Sekmesi:
+          "Yeni" butonuna tıklayın.
+          Tetikleyiciyi "Bilgisayar Başlatıldığında" olarak ayarlayın.
+          Eylemler Sekmesi:
+          "Yeni" butonuna tıklayın.
+          "Program/Senaryo" kısmına Rclone'un tam yolu girin (ör. C:\rclone\rclone.exe).
+          Argüman Ekle kısmına şu komutu girin:
+                    rcd --rc-web-gui --rc-user=admin --rc-pass=yourpassword --rc-addr=0.0.0.0:5572
+Görevi kaydedin.
+
+
+##########################################
